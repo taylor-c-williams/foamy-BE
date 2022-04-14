@@ -1,2 +1,2 @@
 # foamy-BE2
-foamy2
+Foamy 
