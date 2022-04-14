@@ -10,10 +10,10 @@ async function run() {
       imageData.map((image) => {
         return client.query(
           `
-      INSERT INTO images (url, last_modified)
-      VALUES ($1, $2)
-      RETURNING *
-      `,
+          INSERT INTO images (url, last_modified)
+          VALUES ($1, $2)
+          RETURNING *
+          `,
           [image.url, image.lastModified]
         );
       })
