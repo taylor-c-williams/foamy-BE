@@ -10,7 +10,7 @@ async function run() {
     await client.query(`
       DROP TABLE IF EXISTS images
      `);
-    console.log(' drop tables complete');
+    console.log('Drop tables complete! 🔥');
   }
   catch(err) {
     console.log(err);

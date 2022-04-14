@@ -9,10 +9,15 @@ async function run() {
     await client.connect();
 
     await client.query(`
-      CREATE TABLE IMAGES
+      CREATE TABLE images (
+        id SERIAL PRIMARY KEY,
+        url VARCHAR(256) NOT NULL,
+        last_modified VARCHAR(256) NOT NULL,
+        foamy BOOLEAN
+      )
         `);
 
-    console.log('create tables complete');
+    console.log('Create tables complete! 🛢');
   }
   catch(err) {
     console.log(err);
