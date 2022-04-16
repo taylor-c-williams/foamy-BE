@@ -12,7 +12,7 @@ async function run() {
       CREATE TABLE images (
         id SERIAL PRIMARY KEY,
         url VARCHAR(256) NOT NULL,
-        last_modified VARCHAR(256) NOT NULL,
+        last_modified VARCHAR(256),
         foamy BOOLEAN
       )
         `);
