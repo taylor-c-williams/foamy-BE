@@ -24,4 +24,6 @@ async function run() {
   } finally {
     client.end();
   }
+  
 }
+
