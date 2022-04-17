@@ -39,7 +39,7 @@ describe('foamyBE routes', () => {
       'foamy': true, 'id': 5, 'last_modified': '2022-02-23T21:31:27.000Z', 'url': 'https://take-home-foam-challenge.s3.us-west-2.amazonaws.com/prod-exp13436-2020-01-08-at-04.28.52-b0l43ldf7drejbvb9zwwdfk6mzrijepfskmd2fe2nnkypep4oykasytfad4jgs65.png'
     }];
     const res = await request(app)
-      .patch('/api/v1/images/5')
+      .put('/api/v1/images/5')
       .send({ foamy: true });
     expect(res.body).toEqual(expected);
   });  
