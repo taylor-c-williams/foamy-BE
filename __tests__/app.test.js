@@ -43,4 +43,14 @@ describe('foamyBE routes', () => {
       .send({ foamy: true });
     expect(res.body).toEqual(expected);
   });  
+
+  it('get all foamy', async() => {
+    await request(app)
+      .patch('/api/v1/images/6')
+      .send({ foamy: true });
+    const res = await request(app).get('/api/v1/images/status/foamy');
+    expect(res.body).toEqual(
+      { 'foamy': true, 'id': 6, 'last_modified': '2022-02-23T21:31:27.000Z', 'url': 'https://take-home-foam-challenge.s3.us-west-2.amazonaws.com/prod-exp13436-2020-01-08-at-04.29.56-j2ksuoclj7qv9i3eg6kibqp7tt37ofuz7gttf1bljmfjrr7r8so3cud2wgqjrxi9.png' }
+    );
+  });
 });
