@@ -3,9 +3,7 @@ const client = require('../lib/client');
 run();
 
 async function run() {
-  
   try {
-
     await client.connect();
 
     await client.query(`
@@ -14,8 +12,7 @@ async function run() {
         url VARCHAR(256) NOT NULL,
         last_modified VARCHAR(256),
         foamy BOOL
-      )
-        `);
+      )`);
 
     console.log('Create tables complete! 🛢');
   }
