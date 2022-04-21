@@ -1,4 +1,16 @@
-# Foamy Back-End!
+# Foamy Challenge!
+
+## Hello!
+
+My name is Taylor and I wanted to thank you for the opportunity to work on this project, I had a lot of fun with it! ⭐️
+
+## Note
+
+Unfortunately I missed the 1 repo stipulation in the challenge instructions. I have made a monorepo clone here but commit histories must be viewed on the separate repos listed below. So sorry for any inconvenience!
+
+## Quick Video Tour!
+
+https://loom.com/share/fa9491d8a33045e184a099fe76ac9937
 
 ## Repositories & Deploys:
 
@@ -27,10 +39,10 @@ https://foamy-be.herokuapp.com/api/v1/images
 - More details:
   https://github.com/Rob--W/cors-anywhere
 
-- See backend repo commits to Main for CORS/Request Header fix attempts & processes
 - Backend commits after CORS workaround were made to main via Heroku CLI as the fix required hitting a deployed server- localhost is still stuck
-- setup-db, create-tables, drop-tables and load-seed-data commands must be run via Heroku admin (not required to access and use deployed site)
 - See closed PRs for Frontend commit history/messages
+- To run front end locally, clone and run 'npm run start'. The front end hits the deployed back end, not a local port.
+- To run back end locally, clone and run 'npm setup-db' followed by 'npm run start'
 
 ---
 
@@ -38,7 +50,7 @@ https://foamy-be.herokuapp.com/api/v1/images
 
 - Refactor all buttons & toggle handlers into their own components
 - Handle images in Context rather than prop drilling state
-- Make arrow key navigation more apparent on imageItem component
+- Make arrow key navigation more apparent/intuitive on imageItem component
 
 ---
 
